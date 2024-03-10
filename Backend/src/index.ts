@@ -29,6 +29,9 @@ app.use(express.static(path.join(__dirname,"../../Frontend/dist")))
 app.use('/api/auth',authRoutes)
 app.use('/api/users',userRoutes)
 app.use('/api/my-hotels',myHotelRoutes)
+app.get("*",(req:Request,res:Response)=>{
+  res.sendFile(path.join(__dirname,"../../Frontend/dist/index.html"))
+})
 app.listen(8000 , ()=>{
     console.log("server running on localhost:8000")
 })

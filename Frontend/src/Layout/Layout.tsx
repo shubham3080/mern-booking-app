@@ -9,7 +9,7 @@ const Layout=({children}: Props)=>{
         <div className="flex flex-col min-h-screen">
             <Header />
             <Head />
-            <div className="container mx-auto py-10 flex-1 "style={{ width: '60%' }}>
+            <div className="container mx-auto py-10 flex-1 "style={{ width: '70%' }}>
                 {children}
             </div>
             <Footer />
