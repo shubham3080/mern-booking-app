@@ -4,7 +4,6 @@ import {
   UserType,
 } from "../../../../Backend/src/Shared/types";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import { StripeCardElement } from "@stripe/stripe-js";
 import { useSearchContext } from "../../Contexts/SearchContext";
 import { useParams } from "react-router-dom";
 import { useMutation } from "react-query";
